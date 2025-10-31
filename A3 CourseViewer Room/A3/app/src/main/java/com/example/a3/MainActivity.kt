@@ -51,6 +51,7 @@ fun CourseScreen(myVM: CourseViewModel) {
         verticalArrangement = Arrangement.Center
     ) {
 
+
         val courses by myVM.allCourses.collectAsState(listOf())
 
         var depText by remember { mutableStateOf("") }

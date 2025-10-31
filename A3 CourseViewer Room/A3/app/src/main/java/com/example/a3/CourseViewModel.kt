@@ -14,6 +14,7 @@ import kotlinx.coroutines.flow.stateIn
 
 class CourseViewModel(private val repository: Repository) : ViewModel() {
 
+
     // Repo list variable all courses
     val allCourses: StateFlow<List<CourseData>> = repository.allCourses.stateIn(
         scope = repository.scope,
